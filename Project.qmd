@@ -1,0 +1,44 @@
+---
+title: "Project"
+format: html
+editor: visual
+bibliography: references.bib
+---
+
+# Introduction and Literature Review
+
+TODO: Include 4-5 references in the references.bib file using bibtex syntax (Google scholar has a button and then you copy and paste. Leave one line between entries.
+
+# Data and Methods
+
+TODO: Change data values in Statistical_and_Economic_model_Vaccine.R to reflect project problem.
+
+```{r}
+# install required packages
+install.packages(c("R2jags",
+                   "BCEA",
+                   "splancs",
+                   "ggplot2",
+                   "heemod",
+                   "diagram",
+                   "R2OpenBUGS",
+                   "R2jags"))
+install.packages("INLA",repos=c(getOption("repos"),INLA="https://inla.r-inla-download.org/R/stable"), dep=TRUE)
+
+# change wd to local path
+wd <- '/Users/danielpetterson/GitHub/Pharmaeconomics/Lab Sessions'
+setwd(wd)
+
+# decision tree model
+source("Statistical_and_Economic_model_Vaccine.R")
+```
+
+# Decision Analysis
+
+TODO: ICER, EIB
+
+# Probabilistic Sensitivity Analysis
+
+TODO: Use BCEA package. CEAC, EVPI
+
+TODO: References. These should render automatically if you reference correctly in the document and have the bibtex information in the references.bib file. You may want to check if you need a specific referencing style and download/specify the appropriate style in the box at the top.
